@@ -8,13 +8,13 @@
     "dev": "export $(cat .env | xargs) && DEBUG=fcc-metadata-microservice:* nodemon server.js"
   },
   "dependencies": {
-    "node-cmd": "^3.0.0",
+    "chai": "^4.2.0",
+    "chai-http": "^3.0.0",
+    "cors": "^2.8.1",
     "express": "^5.0.0-alpha.2",
     "mocha": "^3.1.0",
-    "chai": "^3.5.0",
-    "chai-http": "^3.0.0",
-    "zombie": "^4.2.1",
-    "cors": "^2.8.1"
+    "node-cmd": "^3.0.0",
+    "zombie": "^4.2.1"
   },
   "engines": {
     "node": "12.18.3"
