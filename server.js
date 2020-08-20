@@ -6,6 +6,10 @@ var cors = require('cors');
 var runner = require('./test-runner');
 
 var bodyParser = require('body-parser');
+// Git/REPL.it syncing webhook
+const gitWebhook = require('./webhooks/git.js');
+app.use('/git', gitWebhook);
+
 app.use(bodyParser.json());
 
 app.get('/', function(req, res){
