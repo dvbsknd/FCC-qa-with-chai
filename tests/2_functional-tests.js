@@ -143,6 +143,7 @@ suite('Functional Tests', function() {
           .end((err, res) => {
             assert.equal(res.status, 200, 'Response should be 200 OK');
             assert.equal(res.type, 'application/json', 'Response should be JSON');
+            assert.equal(res.body.name, 'Giovanni', 'Name should be as supplied');
             assert.equal(res.body.surname, 'da Verrazzano', 'Surname should be as supplied');
             done();
           });
