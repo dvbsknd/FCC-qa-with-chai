@@ -8,6 +8,10 @@ As part of completing the freeCodeCamp [Quality Assurance with Chai](https://www
 
 The curriculum is undergoing a major update so these projects are likely to change, but at the time of writing (August 2020) the information herein is correct.
 
+## Local Development
+
+Although I managed to get all the tests passing locally, I couldn't get the server to run/respond properly on REPL.it after updating packages and deploying it there. The boilerplate version provided by freeCodeCamp _did_ run OK, so I just copied the test files there to pass the accreditation. The actual solutions are identical in this repo, I just couldn't solve the deployment issue.
+
 ## `.env`
 
 If you're interested in cloning this repository, you'll need to set a few things in your `.env` file, both in your local environment and the target. In order to have my `.env` file read locally at run-time, rather than having to set them _literally_, I use the following command in my `dev` script in `package.json` and then run `npm run dev` during local development:
