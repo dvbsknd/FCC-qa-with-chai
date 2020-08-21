@@ -24,18 +24,18 @@ suite('Unit Tests', function(){
     /** 3 - Use assert.isOk() or assert.isNotOk() to make the tests pass. **/
     // .isOk(truthy) and .isNotOk(falsey) will pass
     test('#isOk, #isNotOk', function(){
-      assert.fail( null, 'null is falsey');
-      assert.fail( "I'm truthy", 'a string is truthy');
-      assert.fail( true, 'true is truthy' );
+      assert.isNotOk( null, 'null is falsey');
+      assert.isOk( "I'm truthy", 'a string is truthy');
+      assert.isOk( true, 'true is truthy' );
     });
   
     /** 4 - Use assert.isTrue() or assert.isNotTrue() to make the tests pass. **/
     // .isTrue(true) and .isNotTrue(everything else) will pass.
     // .isFalse() and .isNotFalse() also exist.
     test('#isTrue, #isNotTrue', function(){
-      assert.fail( true, 'true is true');
-      assert.fail( !!'double negation', 'double negation of a truthy is true');
-      assert.fail({ value: 'truthy' }, 'A truthy object is NOT TRUE (neither is false...)' );
+      assert.isTrue( true, 'true is true');
+      assert.isTrue( !!'double negation', 'double negation of a truthy is true');
+      assert.isNotTrue({ value: 'truthy' }, 'A truthy object is NOT TRUE (neither is false...)' );
     });
   
     // There are more assertions like these: .isNaN(), .isBoolean(), 
